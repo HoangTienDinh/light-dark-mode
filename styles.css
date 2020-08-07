@@ -69,6 +69,10 @@ body.dark {
 .sun,
 .moon {
     position: absolute;
+    transition: opacity, fill, var(--transition-delay);
+    width: 30px;
+    height: 30px;
+    fill: var(--accent-color);
 }
 
 .sun {

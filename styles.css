@@ -64,6 +64,8 @@ body.dark {
   align-items: center;
   top: 0;
   height: 200vmin;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transition: transform var(--transition-delay)
 }
 
 .sun,
@@ -82,7 +84,7 @@ body.dark {
 .moon {
     bottom: 5%;
     opacity: 0%;
-
+    transform: rotate(180deg);
 }
 
 .dark .sun {

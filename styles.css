@@ -2,7 +2,7 @@ body {
     --accent-color: orangered;
     --background-color: white;
     --text-color: black;
-    --button-text-color: var(--background-color)
+    --button-text-color: var(--background-color);
     --transition-delay: 1s;
 
 
@@ -39,5 +39,11 @@ body.dark {
     border-radius: .3em;
     border: none;
     outline: none;
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
 
+.theme-toggle-button:hover,
+.theme-toggle-button:focus {
+    transform: scale(1.1);
 }
